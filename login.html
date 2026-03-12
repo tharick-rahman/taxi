@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaxiGo Luxury - Access Your Account</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="auth-wrapper">
+    <div class="bg-circle-1"></div>
+    <div class="bg-circle-2"></div>
+<div class="auth-wrapper">
+    <a href="index.html" class="back-home">
+        <span class="back-icon">←</span>
+        <span class="back-text">Back to Home</span>
+    </a>
+
+    <div class="bg-circle-1"></div>
+
+    <div class="auth-container">
+        <div class="auth-card" id="authCard">
+            
+            <div class="card-front">
+                <div class="auth-header">
+                    <div class="logo">Taxi<span>Go</span></div>
+                    <h2>Welcome Back</h2>
+                    <p>Experience the gold standard of travel.</p>
+                </div>
+
+                <form class="auth-form">
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="••••••••" required>
+                    </div>
+                    <div class="form-help">
+                        <label><input type="checkbox"> Remember me</label>
+                        <a href="404.html">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn-auth">Sign In</button>
+                </form>
+
+                <div class="auth-footer">
+                    <p>Don't have an account? <a href="javascript:void(0)" onclick="toggleAuth()">Register Now</a></p>
+                </div>
+            </div>
+
+            <div class="card-back">
+                <div class="auth-header">
+                    <div class="logo">Taxi<span>Go</span></div>
+                    <h2>Create Account</h2>
+                    <p>Join our elite circle of travelers.</p>
+                </div>
+
+                <form class="auth-form">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="John Doe" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Phone</label>
+                            <input type="tel" placeholder="+1..." required>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Create Password</label>
+                        <input type="password" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="btn-auth">Start Your Journey</button>
+                </form>
+
+                <div class="auth-footer">
+                    <p>Already a member? <a href="javascript:void(0)" onclick="toggleAuth()">Login here</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleAuth() {
+        document.getElementById('authCard').classList.toggle('flipped');
+    }
+</script>
+
+</body>
+</html>

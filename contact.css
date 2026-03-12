@@ -1,0 +1,423 @@
+/* ===== CONTACT PAGE ===== */
+
+/* INFO CARDS */
+.contact-info-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.contact-card {
+  background: var(--gray);
+  border-radius: var(--radius);
+  padding: 40px;
+  text-align: center;
+  transition: var(--transition);
+  border-bottom: 3px solid transparent;
+}
+
+.contact-card:hover {
+  border-bottom-color: var(--yellow);
+  background: #fff;
+  box-shadow: var(--shadow);
+  transform: translateY(-6px);
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.contact-card h3 {
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: var(--black);
+}
+
+.contact-card p,
+.contact-card a {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  text-decoration: none;
+  line-height: 1.7;
+  transition: var(--transition);
+}
+
+.contact-card a:hover { color: var(--yellow); }
+
+/* CONTACT FORM */
+.contact-form-section {
+  padding: 100px 0;
+  background: var(--gray);
+}
+
+.contact-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 480px;
+  gap: 60px;
+  align-items: start;
+}
+
+.contact-form-intro .section-title { text-align: left; }
+.contact-form-intro .section-subtitle { text-align: left; margin-bottom: 32px; }
+
+.contact-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.cd-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--yellow);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.cd-info h4 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: var(--black);
+}
+
+.cd-info p {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.contact-form-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: var(--shadow);
+}
+
+.contact-form-box h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 28px;
+  color: var(--black);
+}
+
+.cform .form-group {
+  margin-bottom: 16px;
+}
+
+.cform label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-light);
+  margin-bottom: 6px;
+  display: block;
+}
+
+.cform input,
+.cform select,
+.cform textarea {
+  width: 100%;
+  padding: 13px 16px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-family: 'Poppins', sans-serif;
+  transition: var(--transition);
+  outline: none;
+  background: #fafafa;
+  color: var(--text);
+}
+
+.cform input:focus,
+.cform select:focus,
+.cform textarea:focus {
+  border-color: var(--yellow);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(255,208,0,0.15);
+}
+
+.cform textarea { resize: vertical; min-height: 130px; }
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-error {
+  color: #e53e3e;
+  font-size: 0.72rem;
+  margin-top: 4px;
+  display: block;
+}
+
+.form-success {
+  display: none;
+  background: #d4edda;
+  color: #155724;
+  padding: 14px 16px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+/* MAP */
+.map-section {
+  padding: 0;
+  background: #fff;
+}
+
+.map-placeholder {
+  height: 400px;
+  background: var(--dark);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.map-grid {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1px;
+  opacity: 0.15;
+}
+
+.map-grid-cell {
+  background: var(--yellow);
+}
+
+.map-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+}
+
+.map-pin {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 12px;
+  animation: mapBounce 2s infinite;
+}
+
+@keyframes mapBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.map-content h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.map-content p {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* HOURS */
+.hours-section {
+  padding: 80px 0;
+  background: var(--gray);
+}
+
+.hours-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.hours-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.hours-table th {
+  background: var(--black);
+  color: #fff;
+  padding: 16px 20px;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+.hours-table td {
+  padding: 14px 20px;
+  font-size: 0.875rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.hours-table td:first-child { font-weight: 600; }
+
+.hours-table tr:last-child td { border-bottom: none; }
+
+.open-badge {
+  background: #22c55e;
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 20px;
+}
+
+.hours-info p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+/* SOCIAL */
+.social-section {
+  padding: 80px 0;
+  background: var(--dark);
+}
+
+.social-section .section-title { color: #fff; }
+.social-section .section-subtitle { color: #888; }
+
+.social-big-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.social-big-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 28px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: var(--transition);
+  border: 2px solid transparent;
+}
+
+.social-big-btn.facebook { background: #1877f2; color: #fff; }
+.social-big-btn.twitter { background: #1da1f2; color: #fff; }
+.social-big-btn.instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: #fff; }
+.social-big-btn.linkedin { background: #0a66c2; color: #fff; }
+
+.social-big-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  opacity: 0.9;
+}
+
+.social-btn-icon { font-size: 1.4rem; }
+
+/* EMERGENCY */
+.emergency-section {
+  padding: 80px 0;
+  background: var(--yellow);
+  text-align: center;
+}
+
+.emergency-section h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.emergency-section p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.emergency-phone {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #000;
+  display: block;
+  margin-bottom: 24px;
+  text-decoration: none;
+  transition: var(--transition);
+  letter-spacing: 2px;
+}
+
+.emergency-phone:hover { transform: scale(1.05); }
+
+@media (max-width: 1024px) {
+  .contact-form-grid { grid-template-columns: 1fr; gap: 40px; }
+  .hours-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+
+@media (max-width: 768px) {
+  .contact-cards { grid-template-columns: 1fr; }
+  .form-row-2 { grid-template-columns: 1fr; }
+  .social-big-links { flex-direction: column; align-items: center; }
+}
+/* Ensure these queries are at the BOTTOM of your style.css */
+
+@media (max-width: 1024px) {
+  /* 1. Force the grid into a single column */
+  .contact-form-grid {
+    grid-template-columns: 1fr; /* This overrides the 1fr 480px */
+    gap: 40px;
+  }
+
+  /* 2. Ensure the form box takes up full width now that it's stacked */
+  .contact-form-box {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* 3. Adjust the Hours grid to stack as well */
+  .hours-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* 4. Stack the 3 info cards vertically */
+  .contact-cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* 5. Make form rows (Name/Email) stack on mobile */
+  .form-row-2 {
+    grid-template-columns: 1fr;
+  }
+
+  /* 6. Center the emergency text for better mobile UX */
+  .emergency-phone {
+    font-size: 2rem; /* Smaller font so it doesn't break the screen */
+  }
+
+  .social-big-links {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>404 - Page Not Found</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #1a1a40, #0f0f1a 70%);
+  overflow: hidden;
+  color: white;
+  text-align: center;
+}
+
+/* Floating particles */
+body::before, body::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background-image: radial-gradient(rgba(255,255,255,0.08) 2px, transparent 2px);
+  background-size: 50px 50px;
+  animation: moveBg 60s linear infinite;
+}
+
+body::after {
+  animation-direction: reverse;
+  opacity: 0.5;
+}
+
+@keyframes moveBg {
+  from { transform: translate(0,0); }
+  to { transform: translate(-200px,-200px); }
+}
+
+.container {
+  z-index: 2;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.error-code {
+  font-size: 140px;
+  font-weight: 800;
+  letter-spacing: 5px;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b, #ffcc70);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: float 3s ease-in-out infinite;
+}
+
+h1 {
+  font-size: 30px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+p {
+  color: #cbd5e1;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.home-btn {
+  padding: 12px 30px;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s ease;
+  box-shadow: 0 0 20px rgba(255,75,43,0.5);
+}
+
+.home-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 35px rgba(255,75,43,0.9);
+}
+
+/* Floating animation */
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media(max-width:600px){
+  .error-code { font-size: 90px; }
+  h1 { font-size: 22px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="error-code">404</div>
+  <h1>Oops! Page Not Found</h1>
+  <p>The page you are trying to reach doesn’t exist or is still under construction.</p>
+  <a href="index.html" class="home-btn">Back to Home</a>
+</div>
+
+</body>
+</html>

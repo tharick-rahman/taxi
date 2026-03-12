@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaxiGo - Premium Taxi Service</title>
+  <meta name="description" content="TaxiGo Premium — luxury taxi booking with split-layout design, tabbed booking, and fleet showcase." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="home2.css" />
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="container nav-container">
+     <a href="index.html" class="nav-logo">
+      <img src="/assets/stack logo.png" alt="TaxiGo logo" />
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <div class="nav-menu" id="navMenu">
+      <ul class="nav-list">
+        <li class="nav-item has-dropdown">
+          <a href="index.html" class="nav-link active">Home <span class="arrow">&#9662;</span></a>
+          <div class="dropdown">
+            <a href="index.html" class="dropdown-item">Home 1</a>
+            <a href="home2.html" class="dropdown-item">Home 2</a>
+          </div>
+        </li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="service.html" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="booking.html" class="nav-link">Booking</a></li>
+    
+        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="login.html" class="btn-book">LOGIN</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- 1. HERO SPLIT -->
+<section class="hero2">
+  <div class="container">
+    <div class="hero2-grid">
+      <div class="hero2-content">
+        <div class="hero2-tag">Premium Ride Experience</div>
+        <h1 class="hero2-title reveal">Premium<br/><span>Taxi Service</span><br/>Redefined</h1>
+        <p class="hero2-desc reveal reveal-delay-1">Experience the difference with TaxiGo's premium fleet. Professional drivers, luxury comfort, and transparent pricing — all at your fingertips.</p>
+        <div class="hero2-btns reveal reveal-delay-2">
+          <a href="booking.html" class="btn-primary">Book Now</a>
+          <a href="fleet.html" class="btn-outline">See Our Fleet</a>
+        </div>
+        <div class="hero2-numbers reveal reveal-delay-3">
+          <div class="hero2-num"><strong>5K+</strong><span>Happy Riders</span></div>
+          <div class="hero2-num"><strong>150+</strong><span>Pro Drivers</span></div>
+          <div class="hero2-num"><strong>4.9&#9733;</strong><span>Avg Rating</span></div>
+        </div>
+      </div>
+      <div class="hero2-img-wrap reveal-right">
+        <img src="assets/home1.webp" alt="Premium TaxiGo luxury service" />
+        <div class="hero2-badge"><strong>24/7</strong><span>Always Available</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. BOOKING WIDGET -->
+<section class="booking-widget">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label reveal">Quick Booking</span>
+      <h2 class="section-title reveal reveal-delay-1">Book Your <span>Ride</span></h2>
+    </div>
+    <div class="booking-card reveal reveal-delay-2">
+      <div class="booking-tabs">
+        <button class="booking-tab active">One Way</button>
+        <button class="booking-tab">Round Trip</button>
+        <button class="booking-tab">Hourly</button>
+      </div>
+      <div class="booking-form-content">
+        <form action="#" method="POST">
+          <div class="booking-form-grid">
+            <div class="input-icon" data-icon="&#128205;">
+              <input type="text" class="form-input" placeholder="Pickup location" />
+            </div>
+            <div class="input-icon" data-icon="&#127988;">
+              <input type="text" class="form-input" placeholder="Drop-off location" />
+            </div>
+            <div class="input-icon" data-icon="&#128197;">
+              <input type="date" class="form-input" />
+            </div>
+            <div class="input-icon" data-icon="&#128336;">
+              <input type="time" class="form-input" />
+            </div>
+            <select class="form-input">
+              <option>Car Type</option>
+              <option>Sedan</option>
+              <option>SUV</option>
+              <option>Luxury</option>
+              <option>Van</option>
+            </select>
+            <select class="form-input">
+              <option>Passengers</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4+</option>
+            </select>
+            <div class="bfg-full">
+<a href="404.html" class="btn-primary">
+Search &#8594;
+</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. ABOUT -->
+<section class="about2-section">
+  <div class="container">
+    <div class="about2-grid">
+      <div class="about2-img reveal-left">
+        <img src="assets/exp.webp" alt="TaxiGo team and fleet" />
+        <div class="about2-img-badge"><strong>10+</strong><span>Years of Service</span></div>
+      </div>
+      <div class="about2-content reveal-right">
+        <span class="section-label">About TaxiGo</span>
+        <h2 class="section-title">More Than Just a <span>Taxi Service</span></h2>
+        <p style="color:var(--text-light);font-size:.95rem;line-height:1.8;margin-bottom:8px;">Since 2016, TaxiGo has been redefining urban mobility. We're not just moving people — we're delivering experiences that matter.</p>
+        <ul>
+          <li>Professional, background-checked drivers</li>
+          <li>Modern, sanitized, GPS-tracked vehicles</li>
+          <li>Fixed rates with zero surge pricing</li>
+          <li>Corporate accounts with monthly invoicing</li>
+          <li>Real-time tracking and 24/7 support</li>
+          <li>Multilingual drivers available</li>
+        </ul>
+        <a href="about.html" class="btn-primary">Learn More About Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. SERVICES SCROLL -->
+<section class="services2-section">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label reveal">Services</span>
+      <h2 class="section-title reveal reveal-delay-1">Everything You <span>Need</span></h2>
+    </div>
+    <div class="services2-scroll">
+      <div class="service2-card reveal reveal-delay-1">
+        <span class="service2-icon">&#128652;</span>
+        <h3>City Rides</h3>
+        <p>Daily commutes across the city</p>
+      </div>
+      <div class="service2-card reveal reveal-delay-2">
+        <span class="service2-icon">&#9992;&#65039;</span>
+        <h3>Airport</h3>
+        <p>Flight-tracked pickups & drops</p>
+      </div>
+      <div class="service2-card reveal reveal-delay-3">
+        <span class="service2-icon">&#128188;</span>
+        <h3>Corporate</h3>
+        <p>Business travel solutions</p>
+      </div>
+      <div class="service2-card reveal reveal-delay-4">
+        <span class="service2-icon">&#128346;</span>
+        <h3>Hourly Hire</h3>
+        <p>Book a driver by the hour</p>
+      </div>
+      <div class="service2-card reveal reveal-delay-5">
+        <span class="service2-icon">&#128739;&#65039;</span>
+        <h3>Long Distance</h3>
+        <p>Intercity comfortable travel</p>
+      </div>
+      <div class="service2-card reveal reveal-delay-6">
+        <span class="service2-icon">&#127775;</span>
+        <h3>Special Events</h3>
+        <p>Weddings, galas & VIP</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. FLEET SHOWCASE -->
+<section class="fleet2-section">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label reveal">Our Fleet</span>
+      <h2 class="section-title reveal reveal-delay-1">Premium <span>Vehicles</span></h2>
+    </div>
+    <div class="fleet2-list">
+      <div class="fleet2-item reveal">
+        <img src="assets/img1.webp" alt="Standard Sedan" />
+        <div class="fleet2-info">
+          <h3>Standard Sedan</h3>
+          <p>Perfect for daily city commutes and solo or couple travel. Economical and reliable.</p>
+          <div class="fleet2-specs">
+            <span class="fleet2-spec">&#128101; 4 Seats</span>
+            <span class="fleet2-spec">&#129524; 2 Bags</span>
+            <span class="fleet2-spec">&#10052; AC</span>
+            <span class="fleet2-spec">&#128246; WiFi</span>
+          </div>
+          <div class="fleet2-price">$2.50<em>/km</em></div>
+          <a href="booking.html" class="btn-primary" style="margin-top:16px;display:inline-block;">Book This Car</a>
+        </div>
+      </div>
+      <div class="fleet2-item reveal">
+        <img src="assets/img2.jpeg" alt="SUV" />
+        <div class="fleet2-info">
+          <h3>SUV</h3>
+          <p>Spacious and versatile for groups, families, and extra luggage. Your comfort guarantee.</p>
+          <div class="fleet2-specs">
+            <span class="fleet2-spec">&#128101; 6 Seats</span>
+            <span class="fleet2-spec">&#129524; 4 Bags</span>
+            <span class="fleet2-spec">&#10052; AC</span>
+            <span class="fleet2-spec">&#128246; WiFi</span>
+          </div>
+          <div class="fleet2-price">$3.50<em>/km</em></div>
+          <a href="booking.html" class="btn-primary" style="margin-top:16px;display:inline-block;">Book This Car</a>
+        </div>
+      </div>
+      <div class="fleet2-item reveal">
+        <img src="assets/minivan.jpeg" alt="Luxury Executive" />
+        <div class="fleet2-info">
+          <h3>Luxury Executive</h3>
+          <p>First-class travel for business executives and special occasions. Unmatched elegance.</p>
+          <div class="fleet2-specs">
+            <span class="fleet2-spec">&#128101; 4 Seats</span>
+            <span class="fleet2-spec">&#129524; 3 Bags</span>
+            <span class="fleet2-spec">&#10052; AC</span>
+            <span class="fleet2-spec">&#127379; Mini-bar</span>
+          </div>
+          <div class="fleet2-price">$5.00<em>/km</em></div>
+          <a href="booking.html" class="btn-primary" style="margin-top:16px;display:inline-block;">Book This Car</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. DRIVERS SPOTLIGHT -->
+<section class="drivers2-section">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label reveal">Our Drivers</span>
+      <h2 class="section-title reveal reveal-delay-1">Top Rated <span>Professionals</span></h2>
+    </div>
+    <div class="drivers2-grid">
+      <div class="driver2-card reveal reveal-delay-1">
+        <div class="driver2-img"><img src="assets/driver1.jpg" alt="Marcus Johnson" /></div>
+        <h3>Marcus Johnson</h3>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <span>4.98 &bull; 2,450 Trips</span>
+      </div>
+      <div class="driver2-card reveal reveal-delay-2">
+        <div class="driver2-img"><img src="assets/driver2.jpeg" alt="Sarah Chen" /></div>
+        <h3>Sarah Chen</h3>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <span>4.97 &bull; 1,820 Trips</span>
+      </div>
+      <div class="driver2-card reveal reveal-delay-3">
+        <div class="driver2-img"><img src="assets/driver3.jpeg" alt="Robert Davis" /></div>
+        <h3>Robert Davis</h3>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <span>4.99 &bull; 3,100 Trips</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. HOW IT WORKS -->
+<section class="how-section">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label reveal">Simple Process</span>
+      <h2 class="section-title reveal reveal-delay-1">How It <span>Works</span></h2>
+    </div>
+    <div class="how-steps">
+      <div class="how-step reveal reveal-delay-1">
+        <div class="how-num">1</div>
+        <h3>Book Online</h3>
+        <p>Enter your pickup and drop-off locations, choose your date and car type.</p>
+      </div>
+      <div class="how-step reveal reveal-delay-2">
+        <div class="how-num">2</div>
+        <h3>Choose Car</h3>
+        <p>Select from our premium fleet based on your preferences and budget.</p>
+      </div>
+      <div class="how-step reveal reveal-delay-3">
+        <div class="how-num">3</div>
+        <h3>Pick Up</h3>
+        <p>Your driver arrives on time, fully ready and professionally dressed.</p>
+      </div>
+      <div class="how-step reveal reveal-delay-4">
+        <div class="how-num">4</div>
+        <h3>Enjoy Ride</h3>
+        <p>Sit back, relax, and enjoy a smooth, safe journey to your destination.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. PRICING TABLE -->
+<section class="pricing2-section">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label reveal">Transparent Fares</span>
+      <h2 class="section-title reveal reveal-delay-1">Our <span>Pricing</span></h2>
+    </div>
+    <div class="reveal">
+      <table class="pricing2-table">
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Base Fare</th>
+            <th class="highlight">Per KM</th>
+            <th>Wait Time</th>
+            <th>Max Passengers</th>
+            <th>Book</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Standard Sedan</strong></td>
+            <td>$5.00</td>
+            <td style="background:#fffdf0;">$2.50</td>
+            <td>$0.50/min</td>
+            <td>4</td>
+            <td><a href="booking.html" class="btn-sm">Book</a></td>
+          </tr>
+          <tr>
+            <td><strong>SUV</strong></td>
+            <td>$7.00</td>
+            <td style="background:#fffdf0;">$3.50</td>
+            <td>$0.75/min</td>
+            <td>6</td>
+            <td><a href="booking.html" class="btn-sm">Book</a></td>
+          </tr>
+          <tr>
+            <td><strong>Luxury</strong></td>
+            <td>$12.00</td>
+            <td style="background:#fffdf0;">$5.00</td>
+            <td>$1.00/min</td>
+            <td>4</td>
+            <td><a href="booking.html" class="btn-sm">Book</a></td>
+          </tr>
+          <tr>
+            <td><strong>Minivan</strong></td>
+            <td>$9.00</td>
+            <td style="background:#fffdf0;">$4.00</td>
+            <td>$0.80/min</td>
+            <td>8</td>
+            <td><a href="booking.html" class="btn-sm">Book</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 9. TESTIMONIALS SLIDER -->
+<section class="testimonial2-section">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label reveal">Reviews</span>
+      <h2 class="section-title reveal reveal-delay-1">What Riders <span>Say</span></h2>
+    </div>
+    <div class="slider-wrap">
+      <div class="testimonial-slide">
+        <div class="testimonial-quote">&ldquo;</div>
+        <p class="testimonial-text">Best taxi experience in the city. Marcus picked me up exactly on time and the car was immaculate. I won't use any other service now.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">AM</div>
+          <div class="author-info"><h5>Amanda Morris</h5><span>Business Traveler</span></div>
+        </div>
+        <div class="stars" style="margin-top:12px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      </div>
+      <div class="testimonial-slide">
+        <div class="testimonial-quote">&ldquo;</div>
+        <p class="testimonial-text">Fixed pricing is a game changer. No more surge prices at rush hour. TaxiGo has saved my company thousands in travel costs this year.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">TH</div>
+          <div class="author-info"><h5>Thomas Hughes</h5><span>Finance Manager</span></div>
+        </div>
+        <div class="stars" style="margin-top:12px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      </div>
+      <div class="testimonial-slide">
+        <div class="testimonial-quote">&ldquo;</div>
+        <p class="testimonial-text">Sarah drove us to the airport at 4am without a single complaint. Cheerful, professional, helped with all the bags. Absolutely 5 stars!</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">KL</div>
+          <div class="author-info"><h5>Karen Liu</h5><span>Frequent Flyer</span></div>
+        </div>
+        <div class="stars" style="margin-top:12px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      </div>
+    </div>
+    <div class="slider-dots">
+      <button class="slider-dot active" aria-label="Slide 1"></button>
+      <button class="slider-dot" aria-label="Slide 2"></button>
+      <button class="slider-dot" aria-label="Slide 3"></button>
+    </div>
+  </div>
+</section>
+
+<!-- 10. STATS YELLOW -->
+<section class="stats2-section">
+  <div class="container">
+    <div class="stats2-grid">
+      <div class="stat2-item reveal reveal-delay-1">
+        <div class="stat-num" data-count="5000">0</div>
+        <div class="stat-label">Happy Customers</div>
+      </div>
+      <div class="stat2-item reveal reveal-delay-2">
+        <div class="stat-num" data-count="150">0</div>
+        <div class="stat-label">Expert Drivers</div>
+      </div>
+      <div class="stat2-item reveal reveal-delay-3">
+        <div class="stat-num" data-count="98">0</div>
+        <div class="stat-label">% Satisfaction</div>
+      </div>
+      <div class="stat2-item reveal reveal-delay-4">
+        <div class="stat-num" data-count="50">0</div>
+        <div class="stat-label">Cities Covered</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. BLOG 2-COL -->
+<section class="blog2-section">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label reveal">Latest Posts</span>
+      <h2 class="section-title reveal reveal-delay-1">Our <span>Blog</span></h2>
+    </div>
+    <div class="blog2-layout">
+      <div class="blog2-featured reveal-left">
+        <img src="assets/driver1.jpg" alt="5 Tips for Safe Late-Night Taxi Rides" />
+        <span class="featured-tag">Safety</span>
+        <h3>5 Tips for Safe Late-Night Taxi Rides</h3>
+        <p>Safety doesn't stop when the sun goes down. Here are five essential tips that every passenger should know to ensure their late-night taxi rides are always secure and comfortable.</p>
+        <a href="blog.html" class="read-more">Read Full Article &rarr;</a>
+      </div>
+      <div class="blog2-list reveal-right">
+        <div class="blog2-mini">
+          <img src="assets/exp.webp" alt="Airport Taxi Guide" />
+          <div class="blog2-mini-body">
+            <h4>How to Book an Airport Taxi Like a Pro</h4>
+            <span>February 20, 2026</span>
+          </div>
+        </div>
+        <div class="blog2-mini">
+          <img src="assets/money.jpeg" alt="Corporate Taxi Accounts" />
+          <div class="blog2-mini-body">
+            <h4>Why Corporate Taxi Accounts Save Money</h4>
+            <span>January 15, 2026</span>
+          </div>
+        </div>
+        <div class="blog2-mini">
+          <img src="assets/three.webp" alt="Driver Training" />
+          <div class="blog2-mini-body">
+            <h4>Inside Our Driver Training Program</h4>
+            <span>December 10, 2025</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12. CTA -->
+
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <div class="footer-logo">TaxiGo</div>
+      <p>Premium taxi service available 24/7. Your safety and comfort is our top priority.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="#" class="social-link" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+        <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg></a>
+        <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="fleet.html">Our Fleet</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">City Rides</a></li>
+        <li><a href="services.html">Airport Transfer</a></li>
+        <li><a href="services.html">Corporate Travel</a></li>
+        <li><a href="services.html">Long Distance</a></li>
+        <li><a href="pricing.html">Pricing Plans</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <p>&#128222; +1 (800) 123-4567</p>
+      <p>&#9993;&#65039; info@taxigo.com</p>
+      <p>&#128205; 123 Main Street, New York, NY 10001</p>
+      <p>&#128336; Available 24/7</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 TaxiGo. All rights reserved.
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
